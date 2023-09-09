@@ -1,0 +1,171 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p{
+            color: red;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ovo je h1</h1>
+    <h4>ovo je h4</h4>
+    <p class="first-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+         when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+         It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+         It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
+         desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    <a href ="https://www.w3schools.com/" target="_blank"> <img src = "./images/slika1.jpg" alt = "tree"></a> <!--relativna putanja u odnosu na onaj koji se nalazimo posmatramo dalje-->
+    <!--&nbsp-->
+    <p>this is ome text , <span class=" custom_bold">this is in snpa </span><b>this is bold </b></p>
+    <!-- div je block a span inline, block zauzima cijelu sirinu -->
+    <!--sheme, prefic, fomain, port, path , filename-->
+    <p>this is my unordered list </p>
+    <ul type = "circle">
+        <li>coffee</li>
+        <li>milk</li>
+        <li>tea</li>
+    </ul>
+
+    <p>this is my ordered list </p>
+    <ol start=" 10">
+        <li>Pyhton</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+
+    </ol>
+
+    <table border="">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+
+        </tr>
+        <tr>
+            <td >Jill</td>
+            <td rowspan="2">Smith </td>
+            <td>50</td>
+
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>23</td>
+
+        </tr>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fuga sequi ut, 
+        maxime impedit eius nam sapiente sunt corrupti cupiditate deserunt vel aliquam autem aut quia eum deleniti ipsam consectetur!</p>
+
+        <table border>
+            <tr>
+                <th colspan="5">my multilevel table</th>
+
+            </tr>
+            <tr>
+                <td rowspan="2" colspan="2">column 0</td>
+                <td rowspan="2" >column 1</td>
+                <td colspan="2">column2</td>
+            </tr>
+
+            <tr>
+                <td>column2a</td>
+                <td>column2b</td>
+            </tr>
+            <tr>
+                <td rowspan="2">row 1</td>
+                <td>row1a</td>
+                <td>123</td>
+                <td>456</td>
+                <td>789</td>
+            </tr>
+            <tr>
+                <td>row1b</td>
+                <td>123</td>
+                <td>456</td>
+                <td>789</td>
+            </tr>
+            <tr>
+                <td colspan="2">row2</td>
+                <td>123</td>
+                <td>456</td>
+                <td>789</td>
+            </tr>
+        </table>
+
+        <iframe src="" frameborder="0"></iframe> <!--da se kreira blok unutar stancie koji ucitava drugu stranicu -->
+
+        <form action="/test" method="post"> <!--za prikuplanje informacija koje korisnik unosi-->
+            <input type="text" placeholder="enter something">
+            <input type="number" placeholder="enter number">
+            <input type="password" placeholder="enter password">
+            <div>
+                <label for="option-1">
+                     <input type="radio" value="1" id="option-1" name="options">
+                     option 1 
+                </label>
+
+                <label for="option-2">
+                    <input type="radio" value="2" id="option-2" name="options">
+                    option 2 
+               </label>
+
+               
+            </div>
+
+            <div>
+                <label for="option-3">
+                    <input type="checkbox" name="checkopt" id="option-3">
+                    majonez
+                </label>
+                <label for="option-4">
+                    <input type="checkbox" name="checkopt" id="option-4">
+                    kecap
+                </label>
+                <label for="option-5">
+                    <input type="checkbox" name="checkopt" id="option-5">
+                    senf
+                </label>
+            </div>
+
+            <div>
+                <input type="file" name="" id="">
+                <input type="button" value="submit">
+
+            </div>
+
+
+            <div>
+                <h2>select</h2>
+            <select name="" id="select">
+                <option value="SELECTBRAND">SELECT BRAND</option>
+
+                <option value="bmw">BMUW</option>
+                <option value="audi" disabled>AUDI</option>
+                <option value="mercedes" >MERCEDES</option>
+            </select>
+            </div>
+
+            <DIV>   
+
+                <h2>text area</h2>
+                <textarea name="" id="" cols="30" rows="10">default com</textarea> <!--multi line input polje -->
+            </DIV>
+
+
+            <button type="submit">submit</button>
+
+            <div>
+
+
+
+            </div>
+        </form>
+</body>
+</html>
