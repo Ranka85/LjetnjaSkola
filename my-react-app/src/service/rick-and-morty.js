@@ -1,10 +1,11 @@
 import { axiosInstance } from "./api"
 
-class RickAndMortyService{
-    getAllCharacters = async () => await axiosInstance.get("/charcters")
-    getAllEpisodes = async () => await axiosInstance.get("/episodes")
-    getAllLocation = async () => await axiosInstance.get("/location")
+class RickAndMortyService {
+    getAllCharacters = async () => await axiosInstance.get("/character")
 
+    getAllLocations = async () => await axiosInstance.get("/location")
+    
+    getAllEpisodes = async () => await axiosInstance.get("/episode")
 }
 
-export const RickAndMortyService = new RickAndMortyService()
+export const rickAndMortyService = new RickAndMortyService()

@@ -1,29 +1,29 @@
 import axios from 'axios';
 
- export const axiosInstance = axios.create({
-  baseURL: '"https://rickandmortyapi.com/api',
-  timeout: 1000,
+export const axiosInstance = axios.create({
+  baseURL: 'https://rickandmortyapi.com/api',
+  timeout: 5000,
   headers: {
     'Content-Type': 'application/json',
   },
 });
 
 
-
 axiosInstance.interceptors.request.use(
   (request) => {
-    console.log('Starting Request', JSON.stringify(request, null, 2));
+    // console.log('Starting Request', JSON.stringify(request, null, 2));
     return request;
   },
   (error) => {
     console.error('Request Error:', error);
+
     return Promise.reject(error);
   }
 );
 
 axiosInstance.interceptors.response.use(
   (response) => {
-    console.log('Response:', JSON.stringify(response, null, 2));
+    // console.log('Response:', JSON.stringify(response, null, 2));
     return response;
   },
   (error) => {
@@ -31,7 +31,3 @@ axiosInstance.interceptors.response.use(
     return Promise.reject(error);
   }
 );
-
- 
-
-
