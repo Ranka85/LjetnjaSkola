@@ -10,3 +10,5 @@ export const MemoDemo = ({ list, page }) => {
   return <>{sortedList.map(({name,status,image,location, url}, index) => <Card key={index} name={name} status={status} image={image} location={location} url={url}/>)}</>
 
 }
+
+
